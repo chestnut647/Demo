@@ -1,0 +1,51 @@
+/*
+* @Author: anchen
+* @Date:   2017-05-23 09:20:03
+* @Last Modified by:   anchen
+* @Last Modified time: 2017-05-23 11:10:13
+*/
+#wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#buttonGroup {
+    display:flex;
+    justify-content: space-around;
+}
+
+#root {
+
+    width: 600px;
+    height: 400px;
+    border:1px solid gray;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+.second {
+    /*flex :auto;*/
+     border:1px solid gray;
+     height:150px;
+    display:flex;
+    justify-content: space-around;
+    padding:10px 0;
+}
+.third {
+    width:250px;
+    border:1px solid gray;
+    display:flex;
+    /*flex-direction: column;*/
+    justify-content: space-around;
+    padding:10px 0;
+}
+.forth {
+   width: 100px;
+    border:1px solid gray;
+
+}
+
+
