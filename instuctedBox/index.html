@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css" media="screen">
+            #wrap {
+                position:absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom:0 ;
+                margin: auto;
+                width: 500px;
+                height: 500px;
+                border: 1px solid gray;
+            }
+            #box {
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            #box #header {
+                width:100%;
+                height:20%;
+                background-color: blue;
+            }
+            #box #content {
+                width:100%;
+                height:80%;
+                background-color: red;
+            }
+            #control {
+                position:absolute;
+                left: 50%;
+                bottom: 50px;
+                margin-left: -80px;
+            }
+            #table {
+                position:absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border: 2px solid black;
+                border-spacing: 0;
+                border-collapse: 0;
+            }
+            #table td{
+                border:1px solid #ccc;
+            }
+            pre {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                height: 100px;
+                margin:  auto;
+                text-align:left;
+                font-size: 15px;
+                font-weight: 700;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <table id="table"></table>
+            <div id="box">
+                <div id="header"></div>
+                <div id="content"></div>
+            </div>
+        </div>
+        <div id="control">
+            <input type="text" id="instruct"/>
+            <button id = "btn"> click</button>
+        </div>
+        <pre>
+            命令：
+                GO: 向蓝色头所在方向前进一格
+                TUN LEF: 向左转
+                TUN RIG: 向右转
+                TUN BAC： 向后转
+            键盘指令：
+                ENTER: 向蓝色头所在方向前进一格
+                ↑：头朝上
+                ↓：头朝下
+                →: 头朝左
+                ←: 头朝右
+        </pre>
+    <script type="text/javascript" src="move.js"></script>
+    </body>
+</html>
